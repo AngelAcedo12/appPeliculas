@@ -5,11 +5,15 @@ import { LayaoutMainComponent } from './layaout-main/layaout-main.component';
 import { TopPelisComponent } from './top-pelis/top-pelis.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { PeliculasConcreteComponent } from './peliculas-concrete/peliculas-concrete.component';
+import { RecomendDationComponent } from './recomend-dation/recomend-dation.component';
 
 const routes: Routes = [
   {
     path:'',component:LayaoutMainComponent,
     children:[
+      {
+        path:'', component:RecomendDationComponent
+      },
       {
         path:'topMovies', component:TopPelisComponent, 
       },

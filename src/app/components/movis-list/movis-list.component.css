@@ -1,0 +1,8 @@
+ul{
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) ) ;
+    padding: 5% 10% 5% 10% ;
+    gap:1em;
+    justify-content: space-around;
+}

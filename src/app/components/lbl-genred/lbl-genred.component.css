@@ -1,0 +1,11 @@
+span{
+    padding: 0.5em;
+    background-color: transparent;
+    border-radius: 50%;
+    border:  transparent;
+    border-width: 1px;
+}
+span:hover{
+    border: solid white;
+    transition: all 0.2s ease-in-out;
+}

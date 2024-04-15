@@ -11,10 +11,15 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { share } from 'rxjs';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { MoviComponent } from './components/movie/movie.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MovisListComponent } from './components/movis-list/movis-list.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+
  
   ],
   imports: [
@@ -22,6 +27,8 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     RouterModule,
     SharedModule,
+    HttpClientModule,
+
   ],
   providers: [
     provideClientHydration()

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuItem } from '../../models/MenuItem';
+import { MenuItem } from '../../models/interfaces/MenuItem';
 
 @Component({
   selector: 'app-menu',
@@ -10,6 +10,7 @@ export class MenuComponent {
 
 
     MenuItems : MenuItem[] =[
+      {title:'Home',router:''},
       {title:'Top Movies', router:'topMovies'},
       {title:'Movies', router:'peliculas'}
     ]

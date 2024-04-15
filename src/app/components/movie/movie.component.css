@@ -1,0 +1,39 @@
+.box-movie{
+
+    border-radius: 10px;
+ 
+    max-width: 400px;
+    
+    border: solid;
+    border-width: 1px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.poster{
+
+    border-radius: 10px 10px 0px 0px;
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    transition:  all 0.2s ease-in-out;
+    
+}
+.box-movie:hover{
+    background-color: gray;
+    transform: scale(1.10);
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-color: white;
+    
+}
+.statist{
+    padding: 0.5em
+}
+@keyframes expand {
+    0%{
+        width: 300px;
+        
+    }100%{
+        width: 500px;
+        z-index: 1;
+    }
+}

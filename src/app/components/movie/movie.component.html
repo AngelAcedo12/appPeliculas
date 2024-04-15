@@ -1,0 +1,11 @@
+<article class="box-movie">
+    <img  class="poster"  [src]="image_path+movie?.backdrop_path" />
+    <div class="statist">
+        <h1>{{movie?.title}}</h1>   
+        <div class="lbls">
+            @for ( genero of movie?.genre_ids; track $index) {
+                
+            }
+        </div>
+    </div>
+</article> 

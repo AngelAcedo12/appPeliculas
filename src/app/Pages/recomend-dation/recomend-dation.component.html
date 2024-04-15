@@ -1,0 +1,10 @@
+
+<section>
+    @defer (when moviesFound) {
+
+        <app-movis-list [movies]="nowPlayingMovies()" [type]="movieType" [genred]="genreds()" ></app-movis-list>
+    }@placeholder {
+        <h1>Cargando...</h1>
+    }
+    
+</section>

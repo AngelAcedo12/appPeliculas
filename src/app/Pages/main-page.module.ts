@@ -10,6 +10,8 @@ import { PeliculasConcreteComponent } from './peliculas-concrete/peliculas-concr
 import { SharedModule } from '../shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../app-routing.module';
+import { RecomendDationComponent } from './recomend-dation/recomend-dation.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -18,13 +20,15 @@ import { AppRoutingModule } from '../app-routing.module';
     TopPelisComponent,
     PeliculasComponent,
     PeliculasConcreteComponent,
+    RecomendDationComponent,
     
   ],
   imports: [
     CommonModule,
     MainPageRoutingModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ComponentsModule
   
 
   ]
