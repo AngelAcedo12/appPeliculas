@@ -1,0 +1,8 @@
+<header>
+    <nav>
+        @for (items of MenuItems; track $index) {
+            <a [href]="'main/'+items.router">{{items.title}}</a>
+        }
+       
+    </nav>
+</header>

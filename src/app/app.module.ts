@@ -7,18 +7,21 @@ import { LayaoutMainComponent } from './Pages/layaout-main/layaout-main.componen
 import { TopPelisComponent } from './Pages/top-pelis/top-pelis.component';
 import { PeliculasComponent } from './Pages/peliculas/peliculas.component';
 import { PeliculasConcreteComponent } from './Pages/peliculas-concrete/peliculas-concrete.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { share } from 'rxjs';
+import { SharedModule } from './shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayaoutMainComponent,
-    TopPelisComponent,
-    PeliculasComponent,
-    PeliculasConcreteComponent
+ 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    SharedModule,
   ],
   providers: [
     provideClientHydration()
