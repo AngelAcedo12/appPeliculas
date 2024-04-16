@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal, Signal } from '@angular/core';
 import { Movie } from '../../models/interfaces/Movie';
 import { MovieTypes } from '../../models/interfaces/Enum/MovieTypes';
 import { Gen } from '../../models/interfaces/Genred';
+import { GenresServiceService } from '../../service/genres-service.service';
 
 @Component({
   selector: 'app-movis-list',
@@ -10,17 +11,24 @@ import { Gen } from '../../models/interfaces/Genred';
 })
 export class MovisListComponent {
 
+
+  constructor(private GenerdService : GenresServiceService){
+
+  }
+
   @Input({required:true}) movies : Movie[] | undefined;
   @Input({required:true}) type : MovieTypes | undefined;
-  @Input({required:true}) genred : Gen[] | undefined;
-
-  asignedGen(movie:Movie){
-  return this.genred?.filter((value) => {
-      return movie.genre_ids.filter(genredMovie => {if(  genredMovie==value.id){
-        console.log(value)
-      }
-     )
-    })
+  
+  ngOnInit(): void {
+   
     
   }
+
+  
+  
+
+
+  
+    
+  
 }

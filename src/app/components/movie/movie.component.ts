@@ -15,13 +15,11 @@ export class MoviComponent {
   
   @Input({required:true}) movie : Movie | undefined
   @Input({required:true}) type  : MovieTypes | undefined
-  @Input({required:true}) genred : Gen[] | undefined
    image_path = enviroments.IMAGE_PATH
   
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-   console.log(this.genred)
   }
 
 }

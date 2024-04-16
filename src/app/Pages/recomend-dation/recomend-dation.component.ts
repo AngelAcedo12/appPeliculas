@@ -19,6 +19,7 @@ export class RecomendDationComponent implements OnInit {
 
   ngOnInit(): void {
       this.loadNowPlayingMovies(this.page())
+   
   }
 
 
@@ -28,14 +29,10 @@ export class RecomendDationComponent implements OnInit {
   moviesFound = signal(false)
   page = signal(1)
   movieType = MovieTypes.Recomend
-  genreds: Signal<Gen[] | undefined> = signal(undefined)
 
 
-  getAllGenred(){
-    this.genredService.getAllGered().subscribe(data => {
-      this.genreds= computed(() => {return data})
-    })
-  }
+
+
 
 
   loadNowPlayingMovies(page:number){

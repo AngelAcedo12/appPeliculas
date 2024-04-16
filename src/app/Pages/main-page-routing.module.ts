@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import path from 'path';
 import { LayaoutMainComponent } from './layaout-main/layaout-main.component';
 import { TopPelisComponent } from './top-pelis/top-pelis.component';
-import { PeliculasComponent } from './peliculas/peliculas.component';
+import { PeliculasComponent } from './shearch/shearch.component';
 import { PeliculasConcreteComponent } from './peliculas-concrete/peliculas-concrete.component';
 import { RecomendDationComponent } from './recomend-dation/recomend-dation.component';
 

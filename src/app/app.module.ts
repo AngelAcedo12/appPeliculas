@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayaoutMainComponent } from './Pages/layaout-main/layaout-main.component';
 import { TopPelisComponent } from './Pages/top-pelis/top-pelis.component';
-import { PeliculasComponent } from './Pages/peliculas/peliculas.component';
+import { PeliculasComponent } from './Pages/shearch/shearch.component';
 import { PeliculasConcreteComponent } from './Pages/peliculas-concrete/peliculas-concrete.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { share } from 'rxjs';
